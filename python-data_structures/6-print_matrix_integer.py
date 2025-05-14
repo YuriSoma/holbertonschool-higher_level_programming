@@ -3,5 +3,3 @@ def print_matrix_integer(matrix=[[]]):
     for i in matrix:
         for n in i:
             print("{:d}".format(n))
-            if n != i[len(i) - 1]:
-                print("")
