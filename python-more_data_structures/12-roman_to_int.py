@@ -36,4 +36,3 @@ def roman_to_int(roman_string):
         elif str_list[i] == 'I':
             converted_count += 1
     return converted_count
-    
