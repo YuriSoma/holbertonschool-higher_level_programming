@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    if type(roman_string) not type("") or roman_string == None:
+        return None
     str_list = list(roman_string)
     converted_count = 0
     for i in range(len(str_list)):
