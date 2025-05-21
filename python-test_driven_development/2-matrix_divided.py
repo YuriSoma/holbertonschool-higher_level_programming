@@ -25,23 +25,20 @@ def matrix_divided(matrix, div):
     if isinstance(matrix, list):
         for row in matrix:
             if not isinstance(row, list):
-                raise 
-                TypeError('matrix must be a matrix (list of lists) of integers/floats')
+                raise TypeError(notMatrix)
             elif lastRowLen == 0:
                 lastRowLen = len(row)
             elif len(row) is not lastRowLen:
-                raise 
-                TypeError('Each row of the matrix must have the same size')
+                raise TypeError('Each row of the matrix must have the same size')
 
             for col in row:
                 if not isinstance(col, int) and not isinstance(col, float):
-                    raise 
-                    TypeError('matrix must be a matrix (list of lists) of integers/floats')
+                    raise TypeError(notMatrix)
                 else:
                     tmp_list.append(round((col / div), 2))
             matrix_result.append(tmp_list[:])
             tmp_list.clear()    
     else:
-        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+        raise TypeError(notMatrix)
     
     return matrix_result
