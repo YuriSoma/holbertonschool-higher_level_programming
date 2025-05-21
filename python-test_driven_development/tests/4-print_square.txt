@@ -13,7 +13,6 @@
 
 >>> print_square(0)
 
-
 >>> print_square(0.0)
 Traceback (most recent call last):
   ...
