@@ -26,7 +26,7 @@ def matrix_divided(matrix, div):
         for row in matrix:
             if not isinstance(row, list):
                 raise 
-                TypeError(notMatrix)
+                TypeError('matrix must be a matrix (list of lists) of integers/floats')
             elif lastRowLen == 0:
                 lastRowLen = len(row)
             elif len(row) is not lastRowLen:
@@ -36,12 +36,12 @@ def matrix_divided(matrix, div):
             for col in row:
                 if not isinstance(col, int) and not isinstance(col, float):
                     raise 
-                    TypeError(notMatrix)
+                    TypeError('matrix must be a matrix (list of lists) of integers/floats')
                 else:
                     tmp_list.append(round((col / div), 2))
             matrix_result.append(tmp_list[:])
             tmp_list.clear()    
     else:
-        raise TypeError(notMatrix)
+        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
     
     return matrix_result
