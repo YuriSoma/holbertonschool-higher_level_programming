@@ -5,9 +5,10 @@
     (b has default value = 98).
     It will return the addition of these 2 inputs,
     if inputs aren't integer or float, then it will raise TypeError exception
-    
 """
 def add_integer(a, b=98):
+
+
     """ addition Function """
     if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError('a must be an integer')
