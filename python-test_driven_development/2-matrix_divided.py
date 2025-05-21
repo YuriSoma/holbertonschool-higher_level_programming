@@ -4,7 +4,12 @@
 
 def matrix_divided(matrix, div):
     """
-    
+    A function expected 2 inputs, a matrix and a number (int or float),
+    and it will divide all elements of the matrix on div (the number).
+    The div should be a number (and not 0).
+
+    Matrix must be a list of lists of integers or floats.
+    Each row of the matrix must be of the same size.
     """
 
     if not isinstance(div, int) and not isinstance(div, float):
@@ -12,6 +17,7 @@ def matrix_divided(matrix, div):
     elif div == 0:
         raise ZeroDivisionError('division by zero')
 
+    notMatrix = 'matrix must be a matrix (list of lists) of integers/floats'
     lastRowLen = 0
     matrix_result = []
     tmp_list = []
@@ -20,7 +26,7 @@ def matrix_divided(matrix, div):
         for row in matrix:
             if not isinstance(row, list):
                 raise 
-                TypeError('matrix must be a matrix (list of lists) of integers/floats')
+                TypeError(notMatrix)
             elif lastRowLen == 0:
                 lastRowLen = len(row)
             elif len(row) is not lastRowLen:
@@ -30,12 +36,12 @@ def matrix_divided(matrix, div):
             for col in row:
                 if not isinstance(col, int) and not isinstance(col, float):
                     raise 
-                    TypeError('matrix must be a matrix (list of lists) of integers/floats')
+                    TypeError(notMatrix)
                 else:
                     tmp_list.append(round((col / div), 2))
             matrix_result.append(tmp_list[:])
             tmp_list.clear()    
     else:
-        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+        raise TypeError(notMatrix)
     
     return matrix_result
