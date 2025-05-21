@@ -18,7 +18,7 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
 
     notMatrix = 'matrix must be a matrix (list of lists) of integers/floats'
-    diffRowSize= 'Each row of the matrix must have the same size'
+    diffRowSize = 'Each row of the matrix must have the same size'
     lastRowLen = 0
     matrix_result = []
     tmp_list = []
