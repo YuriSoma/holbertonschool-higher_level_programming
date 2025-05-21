@@ -38,8 +38,7 @@ def matrix_divided(matrix, div):
                 else:
                     tmp_list.append(round((col / div), 2))
             matrix_result.append(tmp_list[:])
-            tmp_list.clear()    
+            tmp_list.clear()
     else:
         raise TypeError(notMatrix)
-    
     return matrix_result
