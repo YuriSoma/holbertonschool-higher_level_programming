@@ -18,6 +18,7 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
 
     notMatrix = 'matrix must be a matrix (list of lists) of integers/floats'
+    diffRowSize= 'Each row of the matrix must have the same size'
     lastRowLen = 0
     matrix_result = []
     tmp_list = []
@@ -29,7 +30,7 @@ def matrix_divided(matrix, div):
             elif lastRowLen == 0:
                 lastRowLen = len(row)
             elif len(row) is not lastRowLen:
-                raise TypeError('Each row of the matrix must have the same size')
+                raise TypeError(diffRowSize)
 
             for col in row:
                 if not isinstance(col, int) and not isinstance(col, float):
