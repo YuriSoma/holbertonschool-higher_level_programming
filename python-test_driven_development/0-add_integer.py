@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-    add_integer module expects to receive 2 integer (or float, to be converted later to int) inputs a and b 
+    add_integer module expects to receive 2 integer
+    (or float, to be converted later to int) inputs a and b
     (b has default value = 98).
-    It will return the addition of these 2 inputs, if inputs aren't integer or float, then it will raise TypeError exception
+    It will return the addition of these 2 inputs,
+    if inputs aren't integer or float, then it will raise TypeError exception
+    
 """
 def add_integer(a, b=98):
     """ addition Function """
