@@ -2,11 +2,11 @@
 
 >>> text_indentation(' Yaser: Hi. Me:  Hi?   ')
 Yaser:
-
+<BLANKLINE>
 Hi.
-
+<BLANKLINE>
 Me:
-
+<BLANKLINE>
 Hi?
 
 >>> text_indentation('')
