@@ -28,7 +28,7 @@ class Square:
                 print('')
 
             for row in range(self.__size):
-                for col in range(self.__position[0]):
+                for col in range(0, self.__position[0]):
                     print(' ', end="")
                 for col in range(self.__size):
                     print('#', end="")
