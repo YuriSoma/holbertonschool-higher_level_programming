@@ -39,5 +39,3 @@ class Rectangle:
         elif value < 0:
             raise ValueError('height must be >= 0')
         self.__height = value
-my_rectangle = Rectangle(2, -4)
-print(my_rectangle.__dict__)
