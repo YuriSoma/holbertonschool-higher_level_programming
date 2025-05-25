@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """ A class that defines a square and initializes a private attribute
     that will get a value (size) when an object created of the class.
+
+    Size must be int and >= 0, otherwise will raise an error:
+    TypeError: if size not integer
+    ValueError: if size < 0
 """
 
 
