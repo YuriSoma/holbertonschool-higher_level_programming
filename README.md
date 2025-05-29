@@ -7,3 +7,5 @@ This is a repository for Holberton School projects:
 - Python - Exceptions
 - Python - Test-driven development
 - Python - Classes and Objects
+- Python - More Classes and Objects
+- Python - Inheritance
