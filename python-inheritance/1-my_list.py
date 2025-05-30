@@ -4,7 +4,7 @@
 
 class MyList(list):
     """
-    class inherits from list, then prints the list sorted
+    class inherits from list, then prints the list sorted Ascending
     """
     def print_sorted(self):
         print(sorted(self))
