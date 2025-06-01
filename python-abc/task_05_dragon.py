@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""A class that inherits from two Mixin classes"""
+
+
 class SwimMixin:
     def swim(self):
         print("The creature swims!")
