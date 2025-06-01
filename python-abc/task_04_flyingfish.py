@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A class that extend the iter() function to count the iterations"""
+"""A class that inherits from two classes"""
 
 
 class Fish:
