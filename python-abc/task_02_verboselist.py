@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""
-Module containing class Shape and subclasses Circle and Rectangle.
-"""
+"""A class inherited from the built-in list class"""
 
 
 class VerboseList(list):
     """
-    A class to define a shape.
+    Extend the four methods of the list class:
+    append(), extend(), remove() and pop()
+
+    So, they will print messeges when they are called.
     """
     def append(self, item):
         print("Added [{}] to the list.".format(item))
