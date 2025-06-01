@@ -20,11 +20,10 @@ class VerboseList(list):
         super().extend(iterable)
 
     def remove(self, value):
-        if value in self:
-            print("Removed [{}] from the list.".format(value))
-            super().remove(value)
+        print("Removed [{}] from the list.".format(value))
+        super().remove(value)
 
     def pop(self, index=-1):
-        if index in self:
-            print("Popped [{}] from the list.".format(self[index]))
-            super().pop(index)
+        print("Popped [{}] from the list.".format(self[index]))
+        item = super().pop(index)
+        return item
