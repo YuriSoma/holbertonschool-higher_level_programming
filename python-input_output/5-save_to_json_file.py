@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A function convert an object to JSON file """
+""" A function saves an object to JSON file """
 
 import json
 """ Importing JSON module to convert an object to JSON """
