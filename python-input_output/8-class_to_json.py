@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" A script adds all arguments to a Python list,
-    and then save them to a file.
+""" A function returns the dictionary description with simple data structure
 """
 
 
