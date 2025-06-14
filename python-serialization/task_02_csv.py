@@ -13,7 +13,7 @@ def convert_csv_to_json(csv_file):
     data.json - JSON file for the converted csv
 
     Return:
-    Exception on fauiler.
+    False on fauiler, True on success.
     """
 
     data = []
@@ -24,11 +24,11 @@ def convert_csv_to_json(csv_file):
                 data.append(row)
 
     except Exception as e:
-        return e
+        return False
 
     try:
         with open("data.json", "w") as f:
             json.dump(data, f, indent=4)
     except Exception as e:
-        return e
+        return False
     return True
