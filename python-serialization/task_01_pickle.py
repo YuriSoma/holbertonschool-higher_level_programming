@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This module has two functions, for serializaion and deserialization """
+""" Custom class with pickle serialization and deserialization """
 import pickle
 
 
