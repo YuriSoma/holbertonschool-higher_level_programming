@@ -31,3 +31,4 @@ def convert_csv_to_json(csv_file):
             json.dump(data, f, indent=4)
     except Exception as e:
         return e
+    return True
