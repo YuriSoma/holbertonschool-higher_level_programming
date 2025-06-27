@@ -14,3 +14,4 @@ This is a repository for Holberton School projects:
 - Python - Serialization
 - RESTful API
 - SQL - Introduction
+- SQL - More queries
