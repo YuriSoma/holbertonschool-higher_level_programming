@@ -15,3 +15,4 @@ This is a repository for Holberton School projects:
 - RESTful API
 - SQL - Introduction
 - SQL - More queries
+- Python - Object-relational mapping
