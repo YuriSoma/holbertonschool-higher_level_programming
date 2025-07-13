@@ -8,7 +8,7 @@ if (parseInt(argv[2])) {
     y = parseInt(argv[2]);
     x_str = '';
     while (y > 0) {
-      x_str += 'x';
+      x_str += 'X';
       y--;
     }
     console.log(x_str);
