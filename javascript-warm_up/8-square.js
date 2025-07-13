@@ -3,15 +3,15 @@ const { argv } = require('node:process');
 
 if (parseInt(argv[2])) {
   let x = parseInt(argv[2]);
-  let y; let x_str = '';
+  let y; let xStr = '';
   while (x > 0) {
     y = parseInt(argv[2]);
-    x_str = '';
+    xStr = '';
     while (y > 0) {
-      x_str += 'X';
+      xStr += 'X';
       y--;
     }
-    console.log(x_str);
+    console.log(xStr);
     x--;
   }
 } else {
