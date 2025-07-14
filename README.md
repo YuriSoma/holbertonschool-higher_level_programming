@@ -17,3 +17,4 @@ This is a repository for Holberton School projects:
 - SQL - More queries
 - Python - Object-relational mapping
 - JavaScript - Warm up
+- JavaScript DOM manipulation
