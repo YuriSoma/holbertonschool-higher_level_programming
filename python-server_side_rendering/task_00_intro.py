@@ -3,7 +3,7 @@ import os
 def generate_invitations(template, attendees):
     # Type checking
     if not isinstance(template, str):
-        print(f"Error: Expected 'template' to be a string, got {type(template).__name__} instead.")
+        print(f"Error: Expected 'template' to be a string.")
         return
 
     if not isinstance(attendees, list) or not all(isinstance(a, dict) for a in attendees):
@@ -12,7 +12,7 @@ def generate_invitations(template, attendees):
 
     # Empty input checks
     if template.strip() == "":
-        print("Error: Template is empty, no output files generated.")
+        print("Error: Template is empty, no output files.")
         return
 
     if len(attendees) == 0:
