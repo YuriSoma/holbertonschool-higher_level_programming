@@ -18,3 +18,4 @@ This is a repository for Holberton School projects:
 - Python - Object-relational mapping
 - JavaScript - Warm up
 - JavaScript DOM manipulation
+- Python - Server-Side Rendering
