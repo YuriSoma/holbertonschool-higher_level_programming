@@ -7,7 +7,7 @@
     {% include 'header.html' %}
     <h1>Items</h1>
     
-    {% if items = [] %}
+    {% if not items %}
     No items found
     {% else %}
     <main>
