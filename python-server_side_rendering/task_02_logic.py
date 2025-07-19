@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 with open('items.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
-items = data["items"]
+if data:
+    items = data["items"]
 
 @app.route('/')
 def home():
