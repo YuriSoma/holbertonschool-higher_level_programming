@@ -5,10 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    with open('items.json', 'r', encoding='utf-8') as file:
-    data = json.load(file)
-    if data:
-        items = data["items"]
     return render_template('index.html')
 
 @app.route('/about')
@@ -21,6 +17,10 @@ def contact():
 
 @app.route('/items')
 def get_items():
+    with open('items.json', 'r', encoding='utf-8') as file:
+    data = json.load(file)
+    if data:
+        items = data["items"]
     return render_template('items.html', items = items)
 
 if __name__ == '__main__':
