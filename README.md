@@ -19,3 +19,4 @@ This is a repository for Holberton School projects:
 - JavaScript - Warm up
 - JavaScript DOM manipulation
 - Python - Server-Side Rendering
+- Python - Everything is object
